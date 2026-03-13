@@ -1,0 +1,366 @@
+/* ─── Layout ──────────────────────────────────────────────────────────────── */
+
+.app-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  color: #111827;
+}
+
+.app-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.app-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* ─── Card ────────────────────────────────────────────────────────────────── */
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.card--success {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+/* ─── Input Area ──────────────────────────────────────────────────────────── */
+
+.grammar-hint {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.grammar-textarea {
+  width: 100%;
+  font-family: "Fira Code", "Cascadia Code", Consolas, monospace;
+  font-size: 13px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  resize: vertical;
+  background: #f9fafb;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.grammar-textarea:focus {
+  border-color: #7c3aed;
+}
+
+.error-box {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #fee2e2;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #991b1b;
+}
+
+/* ─── Buttons ─────────────────────────────────────────────────────────────── */
+
+.btn-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 7px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s, opacity 0.15s;
+}
+
+.btn--primary {
+  background: #7c3aed;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+}
+
+.btn--primary:hover {
+  background: #6d28d9;
+}
+
+.btn--secondary {
+  background: transparent;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.btn--secondary:hover {
+  background: #f3f4f6;
+}
+
+.cnf-complete-badge {
+  display: inline-block;
+  padding: 7px 16px;
+  font-size: 13px;
+  background: #d1fae5;
+  color: #065f46;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* ─── Step Navigation ─────────────────────────────────────────────────────── */
+
+.step-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.step-nav__btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: #6b7280;
+  font-weight: 400;
+  transition: all 0.15s;
+}
+
+.step-nav__btn--active {
+  background: #7c3aed;
+  color: #ffffff;
+  border-color: #7c3aed;
+  font-weight: 600;
+}
+
+.step-nav__btn--done {
+  background: #ede9fe;
+  color: #4c1d95;
+  border-color: #ede9fe;
+}
+
+/* ─── Step Content ────────────────────────────────────────────────────────── */
+
+.step-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.step-explanation {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.step-footer {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* ─── Info Panel ──────────────────────────────────────────────────────────── */
+
+.info-panel {
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #374151;
+}
+
+.info-panel p {
+  margin-bottom: 4px;
+}
+
+.info-panel__pairs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.info-panel__pair-chip {
+  font-size: 12px;
+  font-family: monospace;
+  background: #f3f4f6;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.info-panel__row-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.info-panel__nullable-warning {
+  font-size: 13px;
+  color: #065f46;
+  margin-top: 4px;
+}
+
+/* ─── Legend ──────────────────────────────────────────────────────────────── */
+
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #6b7280;
+  align-items: center;
+}
+
+/* ─── Productions Table ───────────────────────────────────────────────────── */
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.productions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  font-family: "Fira Code", "Cascadia Code", Consolas, monospace;
+}
+
+.productions-table thead tr {
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.productions-table th {
+  padding: 6px 12px;
+  text-align: left;
+  font-family: system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.productions-table td {
+  padding: 6px 12px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.productions-table tr.row--removed {
+  opacity: 0.4;
+}
+
+.productions-table tr.row--useless {
+  opacity: 0.35;
+}
+
+.prod-rhs--strikethrough {
+  text-decoration: line-through;
+}
+
+/* ─── Syntax Highlighting Spans ───────────────────────────────────────────── */
+
+.sym--nt {
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+.sym--t {
+  color: #059669;
+  font-weight: 500;
+}
+
+.sym--eps {
+  color: #6b7280;
+}
+
+/* ─── Badge ───────────────────────────────────────────────────────────────── */
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-family: system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.badge--added {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+
+.badge--removed {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.badge--new {
+  background: #ede9fe;
+  color: #4c1d95;
+  border: 1px solid #c4b5fd;
+}
+
+.badge--unit {
+  background: #fef3c7;
+  color: #78350f;
+  border: 1px solid #fcd34d;
+}
+
+.badge--useless {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+/* ─── Final CNF Summary ───────────────────────────────────────────────────── */
+
+.cnf-summary__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #15803d;
+  margin-bottom: 6px;
+}
+
+.cnf-summary__body {
+  font-family: "Fira Code", "Cascadia Code", Consolas, monospace;
+  font-size: 13px;
+}
+
+.cnf-summary__prod-row {
+  margin-bottom: 4px;
+}
+
+.cnf-summary__arrow {
+  color: #374151;
+}
+
+.cnf-summary__pipe {
+  color: #9ca3af;
+}
+
